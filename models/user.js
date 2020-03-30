@@ -37,8 +37,8 @@ const userSchema = new mongoose.Schema({
         type: Number,//Higher the number higher the priviledges
         default: 0
     },
-    //purchases history
-    HireHistory:{
+    //Hire history
+    hireHistory:{
         type: Array,
         default: []
     }

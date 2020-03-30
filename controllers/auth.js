@@ -99,7 +99,7 @@ exports.isSignedIn = expressJwt({
 //Custom Middlewares
 exports.isAuthenticated = (req,res,next) =>{
     //profile will be set from frontend only when the user is logged in and auth is the bearer authentication
-    let checker = req.profile && req.auth && req.profile._id === req.auth._id;
+    let checker = req.profile && req.auth && req.profile._id == req.auth._id;
     // req.profile from frontend  req.auth from isSignedIn and  req.profile._id === req.auth._id ids from frontend and backend matches
    
    if(!checker){
